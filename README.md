@@ -1,8 +1,7 @@
 Language tools - English
 ------------------------
 
-About
------
+**About**
 
 language2file can export every language with all pages, news, events and forms and reimport all information after translation. Three different file types are available for the export (all available separately): CSV, XML and XLIFF. The export files are standard compliant and are supported by most of the translation programs.
 
