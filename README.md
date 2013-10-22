@@ -3,7 +3,7 @@ Language tools - English
 
 **About**
 
-language2file can export every language with all pages, news, events and forms and reimport all information after translation. Three different file types are available for the export (all available separately): CSV, XML and XLIFF. The export files are standard compliant and are supported by most of the translation programs.
+language2file export every language with all pages, news, events and forms and reimport all information after translation. Three different file types are available for the export (all available separately): CSV, XML and XLIFF. The export files are standard compliant and are supported by most of the translation programs.
 
 The license is not limited to a domain, installation or project and can be used unlimited after purchase.
 
@@ -15,8 +15,9 @@ The license is not limited to a domain, installation or project and can be used 
 
 **Installation & Configuration**
 
-* Install the extension from the extension repository
-* Configure all required text fields to be included in the export
+* Use the license key to install the extension over the extension repository
+* Choose your pages or other elements and export all informations
+* Reimport the translated files
 
 
 Language tools - Deutsch
@@ -24,9 +25,9 @@ Language tools - Deutsch
 
 **Über**
 
-language2file bietet die Möglichkeit jede angelegte Sprache in Form von Seitenstrukturen, News, Events und Formularen zu exportieren und nach der Übersetzung wieder zu importieren. Es stehen 3 Dateiformate zur Verfügung (jedes Dateiformat ist seperat erhältlich): CSV, XML, XLIFF. Die exportierten Dateien sind standardkonform und werden von den meisten Übersetzungsprogrammen unterstützt.
+language2file bietet die Möglichkeit jede angelegte Sprache in Form von Seiten (inklusive der Artikel und Inhaltselemente), News, Events und Formularen zu exportieren und nach der Übersetzung wieder zu importieren. Es stehen 3 Dateiformate zur Verfügung (jedes Dateiformat muss seperat erworben werden): CSV, XML, XLIFF. Die exportierten Dateien sind standardkonform und werden von den meisten Übersetzungsprogrammen unterstützt.
 
-Die Lizenz ist nach dem Kauf nicht an eine Domain, Installation oder ein Projekt gebunden und kann unbegrenzt oft eingesetzt werden.
+Die Lizenz ist nach dem Kauf an keine Domain, Installation oder ein Projekt gebunden und kann unbegrenzt oft eingesetzt werden.
 
 **Systemvoraussetzungen**
 
@@ -36,5 +37,6 @@ Die Lizenz ist nach dem Kauf nicht an eine Domain, Installation oder ein Projekt
 
 **Installation & Konfiguration**
 
-* Installieren Sie die Extension aus dem Extension Repository
-* Konfigurieren Sie alle gewünschten Textfelder die beim Export berücksichtigt werden sollen
+* Nutzen Sie Ihren Lizenzschlüssel für die Installation über das Extension Repository
+* Wählen Sie die Seiten oder anderen Elementen aus und exportieren Sie die Informationen
+* Importieren Sie die übersetzten Dateien wieder
