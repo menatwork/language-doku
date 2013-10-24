@@ -115,17 +115,17 @@
           <h4>Wie kann ich entscheiden welche Datenbankspalten übersetzt werden?</h4>
           <p>Anhand einer recht umfangreichen Liste kann man zwischen allen verfügbaren Datenbankspalten auswählen. Nach der Installation wird eine Auswahl vorkonfiguriert, diese kann aber jederzeit mit Auswahl der Checkboxen angepasst werden. Dafür muss man lediglich im Backend auf den Menüpunkt "Konfiguration" im Reiter "Übersetzungen" klicken.</p>
 
-          <p>Eine Übersicht davon kann man in den unteren Screenshots sehen. </p>
+          <p>Eine Übersicht davon kann man <a href="#screenshot-1">hier</a> sehen.</p>
 
           <h4>Muss ich für den Export der gesamten Seitenstruktur alle Seiten auswählen?</h4>
           <p>Nein. In der Version 1.1.0 der language2file Extension wurde eine Option integriert, die es erlaubt Seiten rekursiv zu exportieren. Das bedeutet das man nur noch den Startpunkt der Website auswählen muss und nach der Aktivierung dieser Option (direkt im Exportdialog) werden auch alle weiteren Unterseiten, sowie deren Artikel und Inhaltselemente exportiert.</p>
 
-          <h4>Nach dem Export bekomme ich die Meldung das verwaiste Felder übersprungen wurden. Was ist damit gemeint?</h4>
+          <h4>Nach dem Export erscheint eine Meldung über "verwaiste Felder". Was ist damit gemeint?</h4>
           <p>Verwaiste Felder sind Felder in der Datenbank die Contao nicht geleert hat und aus Bequemlichkeit noch gefüllt sind. Zum Beispiel wird bei einer Tabelle kein Bildelement benötigt, es kann aber sein das vor der Tabelle genau dieses Inhaltselement ein Bild war und durch den Redakteur geändert wurde. So entstehen verwaiste Felder.</p>
-          <p>Eine genaue Erklärung findest du im Backend, wenn du bei der Meldung auf "Mehr Informationen" klickst. </p>
+          <p>Mehr Informationen dazu findet man im Backend oder <a href="#screenshot-4">hier</a> im Screenshot.</p>
 
           <h4>Kann ich die HTML Tags vor dem Übersetzer schützen?</h4>
-          <p>...</p>
+          <p>Nein, leider nicht. Die Language Tools beinhalten aber spezielle Prüfungsmechanismen die beim Import einer Datei angewendet werden. Zum Beispiel wird geprüft ob die Anzahl der Tags gleichgeblieben ist und auch die Reihenfolge nicht verändert wurde. Sollte einer dieser Punkte zutreffen, werden entsprechende Einträge mit der Zeilenanzahl und den Feldnamen in das Systemlog geschrieben. Die Datei sollte dann im Optimalfall überarbeitet und nochmal importiert werden. </p>
 
           <h4>Wo werden die Übersetzungen nach dem Export gespeichert?</h4>
           <p>Die Language Tools legen nach der Installation eine minimale Ordnerstruktur unter (tl_)files ab. Die exportierten Übersetzungen werden in /translations/export abgelegt, für den Import muss die ZIP-Datei in /translations/import gespeichert werden.</p>
@@ -149,13 +149,13 @@
 
           <h3>Das CSV-Format</h3>
 
-          <h4>Die CSV ist sehr unleserlich, wie kann ich besser mit diesem Format arbeiten?</h4>
-          <p>Der beste Weg ist der Import in Excel. Es ist nur wichtig das die CSV-Datei auch wirklich importiert und nicht nur geöffnet wird. Sonst können wichtige Elemente oder die Kodierung (UTF-8) verloren gehen.</p>
+          <h4>Die CSV ist auf den ersten Blick unübersichtlich, wie kann ich besser mit diesem Format arbeiten?</h4>
+          <p>Das ist aufgrund des Dateiformats leider nicht zu korrigieren. Der beste Weg ist allerdings der Import in Excel. Es ist nur wichtig das die CSV-Datei auch wirklich importiert und nicht nur geöffnet wird. Sonst können wichtige Elemente oder die Kodierung (UTF-8) verloren gehen.</p>
 
           <h3>Das XML-Format</h3>
 
-          <h4>Welche Inhalte muss ich bei der XML-Datei übersetzen?</h4>
-          <p>...</p>
+          <h4>Welchen Bereich muss ich bei der XML-Datei übersetzen?</h4>
+          <p>In der XML-Datei existieren mehrere Knotenpunkte, der wichtigste ist aber &lt;translations&gt;, der Rest dient dem Import als Metainformation. In dem besagten Knotenpunkt sind die Übersetzungen untergliedert und Seiten, Artikel und Inhaltselemente hierarchisch aufgebaut. Beim Export werden die Inhalte in die beiden Elemente &lt;source&gt; und &lt;translation&gt; geschrieben. &lt;source&gt; ist das Original und dient dem Vergleich und als Hilfestellung während der Übersetzung. &lt;translation&gt; ist der Bereich in dem die Übersetzung abgelegt werden muss. Inhalte in diesem Element werden beim Import berücksichtigt. </p>
 
           <h4>Kann ich die XML-Dateien auch in Word oder Excel bearbeiten? </h4>
           <p>Nein, nicht ohne weiteres. Microsoft Word oder andere Derivate sind keine geeigneten Tools für eine XML-Übersetzung. Mit Hilfe von Excel wäre es möglich, es wird aber eine sogenannte DTD-Datei benötigt. Diese Datei liefern wir aber nicht mit und müsste selbst erstellt werden.</p>
@@ -169,7 +169,7 @@
           <h3>Das XLIFF-Format</h3>
 
           <h4>Wofür benötige ich die language3xliff.xsd?</h4>
-          <p>...</p>
+          <p>Die language3xliff.xsd ist eine ergänzende Datei, die vom Übersetzungsprogramm bei der Verarbeitung der XLIFF-Datei benötigt wird. Hier werden Ergänzungen, sogenannte Metainformationen, definiert. Diese Metainformationen werden vom Übersetzungsprogramm, sowie dem Importer benötigt und müssen am Ende zwingend in der ZIP-Datei enthalten sein.</p>
           </div>
 
           <h2 id="changelog">Versionshistorie</h2>
@@ -230,7 +230,7 @@
 
           <h2 id="screenshots">Screenshots</h2>
 
-          <h3>Konfiguration</h3>
+          <h3 id="screenshot-1">Konfiguration</h3>
           <img src="screenshots/de/configuration.png" alt="" />
 
           <h3>Exportübersicht</h3>
@@ -239,7 +239,7 @@
           <h3>Systemmeldungen nach dem Export</h3>
           <img src="screenshots/de/export_selected_files.png" alt="" />
 
-          <h3>Weiterführende Informationen</h3>
+          <h3 id="screenshot-4">Weiterführende Informationen</h3>
           <img src="screenshots/de/export_lightbox.png" alt="" />
 
           <h3>Import</h3>
@@ -260,14 +260,13 @@
     });
     </script>
     <script>
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script>
-      try {
-        var pageTracker = _gat._getTracker("UA-43710069-1");
-        pageTracker._trackPageview();
-      } catch(err) {}
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43710069-2', 'menatwork.github.io');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>
