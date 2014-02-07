@@ -34,6 +34,7 @@
             <!-- <li><a href="#software">Übersetzungsprogramme</a></li> -->
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#changelog">Versionshistorie</a></li>
+            <li><a href="#hooks">Verfügbare Hooks</a></li>
             <li><a href="#screenshots">Screenshots</a></li>
           </ul>
           <!-- <ul>
@@ -177,6 +178,14 @@
 
           <h3>language2file</h3>
 
+          <h4>1.1.5</h4>
+          <ul>
+            <li>Neuer Hook für die Manipulation der Exportdateien hinzugefügt</li>
+            <li>Allgemeine Codeoptimierungen</li>
+            <li>"slabel" als neues Standardfeld für neue Exporte ergänzt</li>
+            <li>Änderung des Copyright Hinweises von 2013 auf 2014</li>
+          </ul>
+
           <h4>1.1.4</h4>
           <ul>
             <li>"mooHeadline" zur Liste der exportieren Datensätze hinzugefügt</li>
@@ -250,6 +259,11 @@
 
           <h3>language3xliff</h3>
 
+          <h4>1.0.2</h4>
+          <ul>
+            <li>Fehlerbehebung der Exportfunktion für tl_content Einträge ohne Bezug zu einer Seite</li>
+          </ul>
+
           <h4>1.0.1</h4>
           <ul>
             <li>Unterstützung der UUID's (Konvertierung bei Ex- und Import)</li>
@@ -259,6 +273,15 @@
           <ul>
             <li>Veröffentlichung der Extension</li>
           </ul>
+
+          <h2 id="hooks">Verfügbare Hooks</h2>
+          <h3>language2fileManipulateSql</h3>
+
+          <p>Der Hook bietet die Möglichkeit vor dem Export der Dateien die Auwahl der Inhalte einzuschränken/zu verändern. Als Beispiel können so z.B. Inhaltselemente aus definierten Artikeln ignoriert werden. Oder das z.B. alle Artikel deren Ablaufdatem (Anzeigen von/bis) bereits überschritten wurden, nicht mehr exportiert werden.</p>
+
+          <script src="https://gist.github.com/menatwork-dev/8647192.js"></script>
+
+          <p><a href="downloads/examplehooks.zip">Beispielhooks herunterladen</a></p>
 
           <h2 id="screenshots">Screenshots</h2>
 
