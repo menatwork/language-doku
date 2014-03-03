@@ -13,4 +13,4 @@ The project website is work in progress
 * [Contao extension repository](https://contao.org/de/extension-list/view/language2file.html)
 * [Ticket system](https://github.com/menatwork/language-doku/issues)
 
-![Export](http://i.imagebanana.com/img/uj9y7h0b/export_selected_files.png)
+![Export](http://menatwork.github.io/language-doku/screenshots/de/export_selected_files.png)
