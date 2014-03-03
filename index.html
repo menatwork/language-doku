@@ -178,6 +178,18 @@
 
           <h3>language2file</h3>
 
+          <h4>1.1.7</h4>
+          <ul>
+            <li>Optimierung des Hooks "language2fileManipulateSql"</li>
+            <li>Doppelte Legende in der Konfiguration behoben</li>
+            <li>Die Extension "MetaPalettes" ist als weitere Abhängigkeit hinzugekommen</li>
+            <li>Integration einer Prüfung auf deaktivierte Core-Extensions</li>
+            <li>Der Dateityp muss beim Export nicht mehr ausgewählt werden, sofern nur ein Dateityp zur Auswahl steht</li>
+            <li>Erweiterung des Hooks "l2f_insertFunction" um eine Importfunktion, z.B. von MetaModels Inhalten. Siehe Extension language4metamodels!</li>
+            <li>Erweiterung der Exportfelder im Backend um die Felder "page::headline", "content::caption" und "content::titleText"</li>
+            <li>Optimierung des Downloadhinweises nach dem Export der Daten</li>
+          </ul>
+
           <h4>1.1.6</h4>
           <ul>
             <li>Integration einer neuen Whitelist für Binary Daten um fehlerhafte Konvertierungen zu vermeiden</li>
@@ -193,7 +205,7 @@
 
           <h4>1.1.4</h4>
           <ul>
-            <li>"mooHeadline" zur Liste der exportieren Datensätze hinzugefügt</li>
+            <li>"content::mooHeadline" zur Liste der exportieren Datensätze hinzugefügt</li>
           </ul>
 
           <h4>1.1.3</h4>
@@ -204,7 +216,7 @@
 
           <h4>1.1.2</h4>
           <ul>
-            <li>Fehlerbehebung der XLIFF-Auswahl im Exportdialog, das Feld Zielsprache wird sofort geladen</li>
+            <li>Fehlerbehebung der XLIFF-Auswahl im Exportdialog, das Feld "Zielsprache" wird sofort geladen</li>
             <li>Fehlerbehebung des Formularexports, mehrere Formulare können wieder auf einmal exportiert werden</li>
             <li>Integration des Rechtemanagements, Felder können nun für Redakteure freigegeben oder gesperrt werden</li>
             <li>Optimierung der Prüfung auf leere Exportfelder</li>
@@ -263,6 +275,13 @@
           </ul>
 
           <h3>language3xliff</h3>
+
+          <h4>1.0.3</h4>
+          <ul>
+            <li>Erweiterung der Blacklist bei der Kontrolle der Dateien, "alt"-Felder werden nun ignoriert</li>
+            <li>Erweiterung der Prüfung auf vorhandene binäre Datenfelder</li>
+            <li>Optimierung des Codes und kleinere Korrekturen</li>
+          </ul>
 
           <h4>1.0.2</h4>
           <ul>
